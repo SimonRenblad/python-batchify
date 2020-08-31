@@ -9,7 +9,7 @@ Small module for converting a list to a nested list with elements as lists of a 
 import batchify
 ```
 
-### Batchify
+### batchify
 
 ```python
 my_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
@@ -21,7 +21,7 @@ Output:
 [[1, 2, 3], [4, 5, 6], [7, 8, 9], [10]]
 ```
 
-### Unbatchify
+### unbatchify
 
 ```python
 my_list = [[1, 2, 3], [4, 5, 6], [7, 8, 9], [10]]
@@ -31,4 +31,19 @@ print(my_list)
 Output:
 ```python
 [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+```
+
+### is_batched
+
+```python
+my_list = [[1, 2, 3], [4, 5, 6], [7, 8, 9], [10]]
+print(batchify.is_batched(my_list))
+
+my_list = [[1, 2, 3], [4, 5], [6, 7, 8], [9, 10]]
+print(batchify.is_batched(my_list))
+```
+Output:
+```python
+True
+False
 ```
