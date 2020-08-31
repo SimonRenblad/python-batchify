@@ -20,3 +20,15 @@ Output:
 ```python
 [[1, 2, 3], [4, 5, 6], [7, 8, 9], [10]]
 ```
+
+### Unbatchify
+
+```python
+my_list = [[1, 2, 3], [4, 5, 6], [7, 8, 9], [10]]
+my_list = batchify.unbatchify(my_list)
+print(my_list)
+```
+Output:
+```python
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+```
