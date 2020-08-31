@@ -16,3 +16,12 @@ def batchify(target_list, batch_size):
         batch_i += 1
 
     return result_list
+
+def unbatchify(target_list):
+
+    result_list = []
+
+    for batch in target_list:
+        result_list += batch
+
+    return result_list
